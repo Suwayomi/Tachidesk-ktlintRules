@@ -1,0 +1,9 @@
+[versions]
+kotlin = "1.7.20"
+ktlint = "0.48.1"
+
+[libraries]
+ktlint-core = { module = "om.pinterest.ktlint:ktlint-core", version.ref = "ktlint" }
+
+[plugins]
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin"}

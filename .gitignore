@@ -1,0 +1,7 @@
+# Ignore project-specific local files and dirs
+.gradle
+/.idea
+gradle.properties
+
+# Ignore Gradle build output directory
+build
