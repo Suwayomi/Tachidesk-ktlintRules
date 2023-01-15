@@ -10,7 +10,7 @@ package suwayomi.tachidesk.ktlint
 import com.pinterest.ktlint.core.RuleProvider
 import com.pinterest.ktlint.core.RuleSetProviderV2
 
-internal const val CUSTOM_RULE_SET_ID = "tachidesk-rule-set"
+internal const val CUSTOM_RULE_SET_ID = "tachidesk-rules"
 
 public class CustomRuleSetProvider : RuleSetProviderV2(
     id = CUSTOM_RULE_SET_ID,
@@ -18,6 +18,6 @@ public class CustomRuleSetProvider : RuleSetProviderV2(
 ) {
     override fun getRuleProviders(): Set<RuleProvider> =
         setOf(
-            RuleProvider { NoVarRule() },
+            RuleProvider { EnforceCopyrightNoticeRule() },
         )
 }
