@@ -32,7 +32,7 @@ publishing {
     publications {
         create<MavenPublication>("defaultJar") {
             groupId = "com.github.suwayomi"
-            artifactId = "tachidesk-ktlintrules"
+            artifactId = "Tachidesk-ktlintRules"
             version = libVersion
 
             from(components["kotlin"])
@@ -40,7 +40,7 @@ publishing {
 
         create<MavenPublication>("sourcesJar") {
             groupId = "com.github.suwayomi"
-            artifactId = "tachidesk-ktlintrules"
+            artifactId = "Tachidesk-ktlintRules"
             version = "$libVersion-sources"
             artifact(tasks.named("sourcesJar"))
 
